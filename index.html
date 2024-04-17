@@ -1,0 +1,733 @@
+<style>
+*{
+ margin:0px;
+ padding:0px;
+ overflow:hidden;
+}
+body{
+ background:white;
+}
+#container{
+ width:90%;
+ height:585px;
+ border: solid 10px;
+ border-radius:20px;
+ animation: container_bg 6s infinite; 
+ position:absolute;
+ left:5%;
+ overflow:hidden;
+}
+@keyframes container_bg{
+ 0%{box-shadow:0px 0px 50px red;}
+ 50%{box-shadow:0px 0px 50px white;}
+ 100%{box-shadow:0px 0px 50px red;}
+}
+#header{
+ height:100px;
+ width:100%;
+ box-shadow:inset 0px 0px 500px black;
+}
+#header img{
+ box-shadow: 0px 0px 30px white;
+ margin-top:5px;
+ margin-left:10px;
+ width:80px;
+ height:90px;
+ float:left;
+ border-radius:8px;
+ animation:logo_glow 3s infinite, logo 2s;
+}
+@keyframes logo{ 
+ from{transform:translateY(-100px);}
+ to{transform:translateY(0px);}
+}
+@keyframes logo_glow{ 
+ 0%{box-shadow:0px 0px 15px orange;}
+ 25%{box-shadow:0px 0px 15px blue;}
+ 50%{box-shadow:0px 0px 15px red;}
+ 75%{box-shadow:0px 0px 15px yellow;}
+ 100%{box-shadow:0px 0px 15px pink;}
+}
+
+#header navbar{
+ margin:10px;
+ pading:10px;
+ height:100%;
+ float:right;
+ animation: nav 5s;
+}
+@keyframes nav{
+ 0%{transform:translateX(600px);}
+ 50%{transform:translateX(-100px);}
+ 100%{transform:translateX(0px);}
+}
+#header navbar li{
+ font-size:25px;
+ display:inline;
+ background:white;
+ box-shadow:inset 0px 0px 20px red;
+ color:blue;
+ border-radius:8px;
+ margin:2px;
+ text-decoration:none;
+}
+#header navbar li:hover{
+ font-size:30px;
+ box-shadow: 0px 0px 25px red;
+ background:yellow;
+}
+#header navbar li a{
+ text-decoration:none;
+}
+
+#section2{
+ width:100%;
+ height:260px;
+ background:black;
+ position:relative;
+
+}
+#content{
+ width:60%;
+ padding-top:20px;
+ margin-left:30px;
+ float:left;
+ color:white;
+ position:relative;
+ z-index:2;
+ animation:cont 2s;
+}
+
+#content b{
+ color:red;
+ font-size:40px;
+ position:relative;
+ text-shadow:-3px 3px 20px red;
+ z-index:2;
+}
+#content h{
+ font-size:25px;
+ position:relative;
+ z-index:2;
+}
+@keyframes cont{ 
+ from{transform:translatex(-600px);}
+ to{transform:translatex(0px);}
+}
+.order a{
+ box-shadow:0px 0px 15px red;
+ text-decoration:none;
+ color:purple;
+ background:white;
+ border-radius:10px;
+ font-size:30px;
+ display:flex;
+ position:absolute;
+ z-index:2;
+ top:200px;
+ left:200px;
+ transition:0s;
+ animation: order 2s infinite, ord_glow 2s;
+}
+
+@keyframes ord_glow{ 
+ 0%{box-shadow:inset 0px 0px 15px orange;}
+ 25%{box-shadow:inset 0px 0px 15px blue;}
+ 50%{box-shadow:inset 0px 0px 15px red;}
+ 75%{box-shadow:inset 0px 0px 15px yellow;}
+ 100%{box-shadow:inset 0px 0px 15px pink;}
+}
+@keyframes order{
+ 0%{transform:translatex(10px);}
+ 50%{transform:translatex(-10px);}
+ 100%{transform:translatex(10px);}
+}
+.order a:hover{
+ font-size:35px;
+ background:red;
+ color:white;
+ box-shadow:inset 0px 0px 15px yellow;
+}
+#banner{
+ width:100%;
+ position:absolute;
+ z-index:1;
+ top:10px;
+ right:200px;
+}
+#banner img{
+width:400px;
+ height:250px;
+ float:right;
+ display:inline;
+ animation: car 5s;
+ opacity:0.9;
+ border-radius:20px;
+ box-shadow:0px 0px 30px red;
+}
+@keyframes car{
+ from{transform:translateX(-600px);}
+ to{transform:translateX(0px);}
+}
+#section3{
+ height:180px;
+ background:black;
+ position:relative;
+}
+
+#img_set{
+ width:4500px;
+ height:100%;
+ display:inline;
+ position:absolute;
+ z-index:2;
+ background:black;
+ animation: slide 25s infinite linear;
+}
+#img_set:hover{
+ animation-play-state:paused;
+} 
+#img_set img{
+ width:250px;
+ height:200px;
+ margin-top:15px;
+ margin-left:20px;
+ border-radius:10px;
+ z-index:1;
+}
+#img_set img:hover{ 
+ box-shadow: -20px -20px 50px red;
+}
+@keyframes slide{
+ from{transform:translateX(0%);}
+ to{transform:translateX(-79%);}
+}
+#features{
+ width:270px;
+ height:100%;
+ background:black;
+ border-radius:10px;
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ left:900px;
+ color:white;
+ z-index:2;
+}
+#features B{
+ text-shadow:0px 0px 10px;
+}
+#features h{
+ color:orange;
+ text-decoration:none;
+ margin-left:50px;
+}
+#footer{
+ height:70px;
+ background:grey;
+ text-decoration:none;
+ display:flex;
+ justify-content:center;
+}
+#footer li {
+ margin:5px; 
+ padding: 5px;
+ text-decoration:none;
+ border-radius:5px;
+ display:inline;
+ color:white;
+}
+#footer li a{
+ text-decoration:none;
+ color:white;
+}
+
+
+@media screen and (width<=360px) {
+
+*{
+ margin:0px;
+ padding:0px;
+ overflow:hidden;
+
+}
+body{
+  background:black;
+}
+#container{
+  
+ width:90%;
+  
+ height:785px;
+  
+ border: solid 10px;
+  
+ border-radius:20px;
+  
+ animation: container_bg 6s infinite;
+  
+ position:absolute;
+  
+ left:2%;
+
+} 
+@keyframes container_bg{
+  
+ 0%{box-shadow:0px 0px 50px red;}
+  
+ 50%{box-shadow:0px 0px 50px white;}
+  
+ 100%{box-shadow:0px 0px 50px red;}
+}
+#header{
+  
+ height:70px;
+ 
+ width:100%;
+  
+ box-shadow:inset 0px 0px 500px black;
+ position:relative;
+
+}
+#header img{
+  
+ box-shadow: 0px 0px 30px white;
+  margin-top:5px;
+  
+ margin-left:10px;
+  
+ width:50px;
+  
+ height:60px;
+  
+ float:left;
+  
+ border-radius:8px;
+   
+ animation:logo_glow 3s infinite, logo 2s;
+}
+@keyframes logo{
+ 
+ from{transform:translateY(-100px);}
+  
+ to{transform:translateY(0px);}
+}
+@keyframes logo_glow{
+  
+ 0%{box-shadow:0px 0px 15px orange;}
+  
+ 25%{box-shadow:0px 0px 15px blue;}
+  
+ 50%{box-shadow:0px 0px 15px red;}
+  
+ 75%{box-shadow:0px 0px 15px yellow;}
+  
+ 100%{box-shadow:0px 0px 15px pink;}
+} 
+
+#header navbar{ 
+ margin:0px;
+ padding:0px;
+ height:100%;
+ float:right;
+ position: absolute;
+  
+ left:80px;
+
+ animation: nav 5s;
+}
+@keyframes nav{
+  
+ 0%{transform:translateX(600px);}
+ 50%{transform:translateX(-50px);}
+ 100%{transform:translateX(0px);}
+}
+#header navbar li{
+ 
+ font-size:15px;
+  
+ display:inline;
+  
+ background:white;
+  
+ box-shadow:inset 0px 0px 20px red;
+  
+ border:radius:8px;
+ color:blue;
+  
+ margin:1px;
+    
+ text-decoration:none;
+
+}
+#header navbar li:hover{
+  
+ box-shadow: 0px 0px 25px red;
+  
+ background:yellow;
+ font-size:20px;
+}
+#header navbar li a{
+  
+ text-decoration:none;
+
+}
+
+#section2{
+  
+ width:100%;
+  
+ height:260px;
+  
+ background:black;
+  
+ position:relative;
+
+}
+#content{
+  
+ width:100%;
+  
+ padding-top:10px;
+  
+ margin-left:20px;
+  
+ float:left;
+  
+ color:white;
+  
+ position:relative;
+  
+ z-index:2;
+  
+ animation:cont 2s;
+}
+#content b{
+  
+ color:red;
+  
+ font-size:20px;
+ 
+ position:relative;
+  
+ z-index:2;
+  
+ text-shadow: 0px 3px 3px red;
+  
+
+}
+#content h{
+  
+ font-size:12px;
+  
+ position:relative;
+  
+ z-index:2;
+}
+@keyframes cont{
+  
+ from{transform:translatex(-600px);}
+  
+ to{transform:translatex(0px);}
+}
+.order a{
+  
+ box-shadow:0px 0px 15px red;
+  
+ text-decoration:none;
+  
+ color:purple;
+  
+ background:white;
+  
+ border-radius:10px;
+  
+ font-size:20px;
+  
+ display:flex;
+ 
+ position:absolute;
+  
+ z-index:2;
+  
+ top:180px;
+  
+ left:100px;
+  
+ transition:0s;
+  
+ animation: order 2s infinite, ord_glow 2s;
+}
+
+@keyframes ord_glow{
+  
+ 0%{box-shadow:inset 0px 0px 15px orange;}
+ 
+ 25%{box-shadow:inset 0px 0px 15px blue;}
+  
+ 50%{box-shadow:inset 0px 0px 15px red;}
+  
+ 75%{box-shadow:inset 0px 0px 15px yellow;}
+  
+ 100%{box-shadow:inset 0px 0px 15px pink;}
+}
+@keyframes order{
+  
+ 0%{transform:translatex(10px);}
+  
+ 50%{transform:translatex(-10px);}
+  
+ 100%{transform:translatex(10px);}
+} 
+.order a:hover{
+ font-size:25px;
+  
+ background:red;
+  
+ color:white;
+  
+ box-shadow:inset 0px 0px 15px yellow;
+}
+#banner{
+  
+ width:100%;
+  
+ position:absolute;
+  
+ z-index:1;
+  
+ top:10px;
+  
+ right:10px;
+}
+#banner img{
+ border-radius:20px;
+  
+ width:400px;
+  
+ height:250px;
+  
+ float:right;
+  
+ display:inline;
+  
+ box-shadow:0px 0px 40px black;
+  
+ animation: car 5s;
+ opacity: 0.4;
+  
+ position:relative;
+
+}
+@keyframes car{
+  
+ from{transform:translateX(-600px);}
+  
+ to{transform:translateX(0px);}
+}
+#section3{
+  
+ height:180px;
+ background:black;
+
+}
+
+#img_set{
+  
+ width:4500px;
+  
+ height:100%;
+  
+ float:left;
+  
+ postion:absolute;
+ z-index:2;
+ 
+ background:black;
+ display:inline;
+  
+ transition: 0s;
+  
+ animation: slide 20s infinite linear;
+
+}
+#img_set:hover{
+ animation-play-state:paused;
+}
+@keyframes slide{
+    
+ from{transform: translateX(0%);}
+    
+ to{transform:translateX(-80%);}
+  
+}
+
+#img_set img{
+ width:200px;
+  
+ height:150px;
+  
+ margin:20px;
+  
+ border-radius:10px;
+ box-shadow:3px 5px 5px red;
+  
+ transition:0s;
+
+}
+ 
+#img_set img: hover{
+     
+ box-shadow: -50px -50px 200px white;
+}
+
+#features{
+  
+ width:100%;
+  
+ position:relative;
+  
+ background:black;
+  
+ height:100%;
+
+}
+
+#features B{
+  
+ text-shadow:0px 0px 10px ;
+  
+ color:white;
+  
+ position:absolute;
+
+}
+
+#features h{
+  
+ color:orangered;
+  
+ text-decoration: none;
+  
+ margin-left: 100px;
+
+}
+
+#features li{
+  
+ color:white;
+  
+ display:flex;
+  
+ flex-direction: row;
+ text-decoration: none;
+
+}
+#footer{
+  
+ height:70px;
+   
+ display:inline;
+ text-decoration:none;
+
+}
+#footer li {
+  
+ text-decoration:none;
+  
+ border-radius:5px;
+  
+ display:inline;
+}
+#footer li a{
+  
+ text-decoration:none;
+
+}
+
+</style>
+
+<meta http-equiv="refresh" content="">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>lading page (codsoft)</title>
+</head>
+<body>
+<div id="container">
+  <div id="header">
+  <img src="https://seeklogo.com/images/T/tesla-logo-E72BB35180-seeklogo.com.png">  
+    <navbar>
+     <li><a href="">Home</a></li>
+     <li><a href="">Contact</a></li>
+     <li><a href="">About</a></li>
+     <li><a href="">products</a></li>
+     <li><a href="">login</a></li>
+    </navbar>
+  </div>
+  <div id="section2">
+   <div id="content">
+    <b>TESLA CARS IN INDIA</b><br><br>
+    <h>We are introducing our tesla cars in inida.<br>
+    we are curruntly providing in 50% offer.</h>
+   </div>
+   <div class="order"><a href="">ORDER NOW</a>
+   </div>
+   <div id="banner">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuAKLOnPHSE1od1n0osef8En_8YJigG2Wr7g">
+   </div>
+  </div>
+  <div id="section3">
+   <div id="img_set">
+    <a href="">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAYVmzBziW0YK_SEMTRkJ2YVJ3BWyzaCdxfoC7bv3jcX-V_lkKueeBt6g&s=10"></a>
+    <a href="">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/2021_Tesla_Model_S_P2_Long_Range_front_right_view.jpg/220px-2021_Tesla_Model_S_P2_Long_Range_front_right_view.jpg"></a>
+    <a href="">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLJ4_IsHVHFc1kdaAEDABYuTORX8uV3T_guA&usqp=CAU"></a>
+    <a href="">
+       <img src="https://images.unsplash.com/photo-1617704548623-340376564e68?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></a>
+    <a href="">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcbICqI4Jm8_vtz0qlGTsjHQKDxmjGkZdrSMH5RdntmNbI_-rSIggb-t1Q&s=10"></a>
+    <a href="">
+       <img src="https://images.unsplash.com/photo-1634804658555-248d9e9a212f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></a>
+    <a href="">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT7v0fXTSgiPtzd2m51rW983uH8EpclsQuWFZzIPo0ll01ZMMinPiAaZk&s=10"></a>
+    <a href="">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj5xakUYGUK7TY8Rs3v79ynbIXspCtZwmCJQ"></a>
+    <a href="">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF_lSitRdGiAh_oAlScFNSgb9kaelgQ9xYfg"></a>
+    <a href="">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh1PJC7gto5wzwB1C3r8HTJ8L3OrynGCEW4y30GuBWNH_w1uRbinp6x6R9&s=10"></a>
+    <a href="">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuAKLOnPHSE1od1n0osef8En_8YJigG2Wr7g"></a>
+    <a href="">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgxU0QkjBLa9tM1YN3D-ZC6Zjxu-j7Od6ug"></a>
+    <a href="">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzpgmbAM4-3dnhtdT1Y-BybWOwaC5qQ6WJjQ"></a>
+    <a href="">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr1rUlAY0CAoRWdmUmeIHaPnkI5iK195pC4Q"></a>
+    <a href="">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAhJYJYZf9nrvb_sXr-va0e7NweryxKSHYbzpLsEPwRk0mqJfB1Iyxf40&s=10"></a>
+    <a href="">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcoJ4xbv-i9OwMtG4hPc4mul6vZFXytd_tvQkN70HXMvS2sN8oA9KUMUo&s=10"></a>
+    <a href="">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4PdF10ct-_b4nVmsa--1I_HrwMZGooZhrOCqmHvhBxwpGvYBGYIB4awU&s=10"></a>
+   </div>
+   <div id="features">
+    <B><U>FEATURES</U></B>
+    <li>Auto Driving</li>
+    <li>High Battery Capacity</li>
+    <li>fast charging</li>
+    <h><a" href="">see more..</a></h>
+   </div>
+  </div>
+  <div id="footer">
+   <li><a href="">Home</a></li>
+   <li><a href="">Offers</a></li>
+   <li><a href="">Models</a></li>
+   <li><a href="">Shop</a></li>
+  </div>
+  </div>
+ </body>
+</html>
